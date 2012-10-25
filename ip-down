@@ -7,11 +7,10 @@ fi
 
 ODLGW=`cat /tmp/pptp_oldgw`
 
-######
 # apple store
 route delete 63.97.94.35 "${OLDGW}"
 route delete 219.76.10.14 "${OLDGW}"
-######
+# China
 route delete 1.0.1.0/24 ${OLDGW}
 route delete 1.0.2.0/23 ${OLDGW}
 route delete 1.0.8.0/21 ${OLDGW}
